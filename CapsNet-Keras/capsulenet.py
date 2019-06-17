@@ -195,6 +195,7 @@ def manipulate_latent(model, data, args):
 def load_mnist():
     # the data, shuffled and split between train and test sets
     from keras.datasets import mnist
+    print('load mnist...')
     (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
     x_train = x_train.reshape(-1, 28, 28, 1).astype('float32') / 255.
@@ -205,6 +206,7 @@ def load_mnist():
 
 def load_cifar10():
     from keras.datasets import cifar10
+    print('load cifar10...')
     (x_train, y_train), (x_test, y_test) = cifar10.load_data()
     x_train = x_train.reshape(-1, 32, 32, 3).astype('float32') / 255.
     x_test = x_test.reshape(-1, 32, 32, 3).astype('float32') / 255.

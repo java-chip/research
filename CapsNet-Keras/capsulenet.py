@@ -27,7 +27,7 @@ from capsulelayers import CapsuleLayer, PrimaryCap, Length, Mask
 import tensorflow as tf
 
 #config = tf.ConfigProto()
-#config.gpu_options.per_process_gpu_memory_fraction = 0.3
+#config.gpu_options.per_process_gpu_memory_fraction = 0.4
 #sess = tf.Session(config=config)
 #K.set_session(sess)
 K.set_image_data_format('channels_last')

@@ -1,0 +1,2 @@
+cudatoolkit(cuda8.0)
+cudnn6.0(cuda8.0)

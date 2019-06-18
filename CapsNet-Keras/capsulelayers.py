@@ -197,6 +197,7 @@ def PrimaryCap(inputs, dim_capsule, n_channels, kernel_size, strides, padding):
             random.shuffle(li)
             for index in li:
                 x = layers.concatenate([K.expand_dims(x[:,:,:,index], 3), x], axis = 3)
+        print("variation_num: ", variation_num)
         print("output.shape after: ",x)
         return x
     output = layers.Lambda(process)(output)

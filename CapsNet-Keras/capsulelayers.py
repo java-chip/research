@@ -190,7 +190,7 @@ def PrimaryCap(inputs, dim_capsule, n_channels, kernel_size, strides, padding):
     print("output.shape after: ",output)
     # 特徴マップ8枚のグルーピングのバリエーションを増やす
     def process(x):
-        variation_num = 2
+        variation_num = 3
         import random
         li = list(range(0,256))
         for _ in range(variation_num):
